@@ -1,4 +1,4 @@
-
+import os
 pipeline {
     agent any
     environment {
