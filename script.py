@@ -1,5 +1,3 @@
 import os
-
-# printing environment variables
-print(os.environ)
-print("Hello World")
+print(os.environ['HOME'])
+print("Hello world")
