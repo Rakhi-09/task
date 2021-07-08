@@ -16,6 +16,5 @@ pipeline {
                 sh "./script.sh"
             }
         }
-
     }
 }
