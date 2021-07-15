@@ -14,8 +14,7 @@ subprocess.call(['bash','./script.sh'])
 
 
 
-print(os.environ['HOME'])
-
-print("Hello world")
+# print(os.environ['HOME'])
+# print("Hello world")
 
 
