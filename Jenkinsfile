@@ -11,11 +11,7 @@ pipeline {
                 sh "python3 script.py"
             }
         }
-        stage('Running Shell scripting') {
-            steps {
-                sh "./script.sh"
-            }
-        }
+        
         
     }
    
