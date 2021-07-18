@@ -1,12 +1,25 @@
-#!/bin/sh
-# echo "what is your name?"
-# read PERSON
-# echo "Hello,$PERSON"
-echo "NAME=$NAME"
-# printing env variables
+#!/bin/bash
+usage() { echo "Usage: $0 [-a name1] [-b name2] [-c name3]" 1>&2; exit 1; }
+
+
+while getopts ":a:b:c:" opt; do
+  case $opt in
+    a) USER1="$OPTARG"
+    ;;
+    b) USER2="$OPTARG"
+    ;;
+    c) USER3="$OPTARG"
+    ;;
+    \?) usage
+    ;;
+    
+  esac
+done
+if [ -z "${a}" ] || [ -z "${b}" ] || [ -z "${c}" ]; then
+    usage
+fi
 echo " Env var from Python script"
 echo "USER1=$USER1"
 echo "USER2=$USER2"
 echo "USER3=$USER3"
-
 
