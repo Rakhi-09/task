@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage('Running Python stage') {
             steps {
+                echo "Hello World"
                 sh "python3 script.py"
             }
         }
