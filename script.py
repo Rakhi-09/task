@@ -8,7 +8,7 @@ os.environ['USER2'] = 'Rahul'
 os.environ['USER3'] = 'Rakhi'
 
 # calling shellscript
-print("Calling script.sh...")
+print("Calling script.sh")
 subprocess.call(shlex.split("./script.sh -a Rohan  -b Rahul  -c Rakhi"))
 
 
