@@ -1,5 +1,5 @@
 import subprocess
-
+import shlex
 import os
 # setting environment variables
 print("Setting env variables")
@@ -9,7 +9,7 @@ os.environ['USER3'] = 'Rakhi'
 
 # calling shellscript
 print("Calling script.sh")
-subprocess.call(['bash','./script.sh'])
+subprocess.call(shlex.split("./script.sh -a Rohan  -b Rahul  -c Rakhi"))
 
 
 

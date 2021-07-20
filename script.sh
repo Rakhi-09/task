@@ -15,7 +15,7 @@ while getopts ":a:b:c:" opt; do
     
   esac
 done
-if [ -z "${a}" ] || [ -z "${b}" ] || [ -z "${c}" ]; then
+if [ -z "${USER1}" ] || [ -z "${USER2}" ] || [ -z "${USER3}" ]; then
     usage
 fi
 echo " Env var from Python script"
