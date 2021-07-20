@@ -1,6 +1,7 @@
 
 pipeline {
     agent any
+    options { overrideIndexTriggers(false) }
     environment {
         NAME = "Raakhi"
     }
