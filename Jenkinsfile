@@ -12,11 +12,7 @@ pipeline {
                 sh "python3 script.py"
             }
         }
-        stage('Running Shell stage') {
-            steps {
-                sh "./script.sh"
-            }
-        }
+        
         
         
     }
